@@ -27,20 +27,20 @@
 						<div class="row bor">
 							<div class="image col-md-5 col-sm-12">
 								<div class="image-inner">
-									<img src="static/image/avatar.png" alt="" class="avatar">
+									<img src="/static/image/avatar.png" alt="" class="avatar">
 								</div>
 								<div class="ID">ID:#3456245</div>
 							</div>
 							<div class="user col-md-7 col-sm-12">
 								<ul class="list-info-user navbar-nav">
 									<li class="nav-item">
-										<i class="fa fa-user icon"></i>Lai Bá Vĩ
+										<i class="fa fa-user icon"></i>{{user.name}}
 									</li>
 									<li class="nav-item">
-										<i class="fab fa-teamspeak icon"></i>Đội Hà Nội
+										<i class="fab fa-teamspeak icon"></i>Đội {{user.team}}
 									</li>
 									<li class="nav-item">
-										<i class="fas fa-users-cog icon"></i>Đơn vị VNPT SOC
+										<i class="fas fa-users-cog icon"></i>{{user.donvi}}
 									</li>
 								</ul>
 							</div>
@@ -55,42 +55,13 @@
 						<ul class="list-schedule">
 							<table class="table">
 							  <tbody>
-							    <tr class="item-schedule">
-							      <td>2019-04-03</td>
-							      <td>06:15:00</td>
-							      <td>Hội nghị bàn tròn</td>
-							    </tr>
-								<tr class="item-schedule">
-							      <td>2019-04-03</td>
-							      <td>06:15:00</td>
-							      <td>Hội nghị bàn tròn</td>
-							    </tr>
-								<tr class="item-schedule">
-							      <td>2019-04-03</td>
-							      <td>06:15:00</td>
-							      <td>Hội nghị bàn tròn</td>
-							    </tr>
-								<tr class="item-schedule">
-							      <td>2019-04-03</td>
-							      <td>06:15:00</td>
-							      <td>Hội nghị bàn tròn</td>
-							    </tr>
-								<tr class="item-schedule">
-							      <td>2019-04-03</td>
-							      <td>06:15:00</td>
-							      <td>Hội nghị bàn tròn</td>
-							    </tr>
-								<tr class="item-schedule">
-								 <td>2019-04-03</td>
-								 <td>06:15:00</td>
-								 <td>Hội nghị bàn tròn</td>
-							    </tr>
-							    <tr class="item-schedule">
-								 <td>2019-04-03</td>
-								 <td>06:15:00</td>
-								 <td>Hội nghị bàn tròn</td>
-							    </tr>
-
+									{% for obj in lichtrinh %}
+									<tr class="item-schedule">
+											<td>{{obj.time_schedule|date:'d-m-Y'}}</td>
+											<td>{{obj.time_schedule|date:'H:i'}}</td>
+											<td>{{obj.event}}</td>
+									</tr>
+									{% endfor %}
 							  </tbody>
 							</table>
 						</ul>

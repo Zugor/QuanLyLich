@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  body {
+    font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #2196f3;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+  
+  .icon {
+    margin-right: 15px;
+  }
+  
+  .all {
+    padding-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .temp {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .info-user {
+    padding: 0px 10px 10px 20px;
+  }
+  .info-user .bor .image .ID {
+    text-align: center;
+    padding: 10px 5px;
+  }
+  .info-user .bor .image .image-inner img {
+    width: 100%;
+    height: auto;
+  }
+  .info-user .bor .list-info-user {
+    padding-left: 0 !important;
+  }
+  .info-user .bor .list-info-user li {
+    padding: 7px;
+    font-size: 17px;
+    text-transform: capitalize;
+  }
+  .info-user .bor .list-info-user li .fa-user {
+    color: #2196f3;
+  }
+  .info-user .bor .list-info-user li .fa-teamspeak {
+    color: #2196f3;
+  }
+  .info-user .bor .list-info-user li .fa-users-cog {
+    color: #2196f3;
+  }
+  
+  .schedule {
+    border-left: 1px solid #ccc;
+  }
+  .schedule .banner {
+    padding: 3px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    z-index: 1000;
+  }
+  .schedule .banner h3 {
+    text-align: center;
+    font-size: 22px;
+    color: #007bff;
+  }
+  .schedule .dital .list-schedule {
+    padding-left: 0;
+    border: 1px solid #ccc;
+    max-height: 274px !important;
+    display: block;
+    overflow-y: auto;
+    margin-bottom: 0;
+  }
+  .schedule .dital .list-schedule table {
+    margin-bottom: 0 !important;
+  }
+  .schedule .dital .list-schedule table .item-schedule td {
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #ccc;
+  }
+  .schedule .dital .list-schedule table .item-schedule td:last-child {
+    border-right: 0 !important;
+  }
+  
+  @media all and (min-width: 768px) and (max-width: 992px) {
+    .temp {
+      margin-top: 50px !important;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .mb-3 {
+      margin-bottom: 0 !important;
+    }
+  
+    .temp {
+      margin-top: 0;
+    }
+  
+    .info-user {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .info-user .image {
+      padding-top: 30px;
+      border-bottom: 40px solid #007bff;
+      border-left: 30px solid #007bff;
+      border-right: 30px solid #007bff;
+    }
+    .info-user .image .image-inner {
+      max-width: 60% !important;
+      margin: 0 auto;
+    }
+  
+    .item-schedule {
+      padding-left: 10px !important;
+    }
+  
+    .all {
+      padding-top: 0;
+    }
+  }
